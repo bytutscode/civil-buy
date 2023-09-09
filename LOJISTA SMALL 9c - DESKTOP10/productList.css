@@ -231,7 +231,7 @@ option {
 .products-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-auto-rows: auto 270px;
+    grid-auto-rows: auto;
     gap: 10px;
     margin: auto;
     padding-bottom: 2rem;
@@ -392,7 +392,6 @@ footer span a {
 
     .products-container {
         grid-template-columns: repeat(3, auto);
-        grid-auto-rows: auto;
         gap: 30px;
     }
 
