@@ -86,6 +86,7 @@ header {
 
 
 
+
 /*  */
 main {
     padding: 30px 10px;
@@ -215,6 +216,7 @@ option {
     border: none;
     margin-left: auto;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .create-product-btn:hover {
@@ -275,6 +277,7 @@ option {
     overflow: hidden;
     line-height: 16px;
     height: calc(3 * 16px);
+    color: #282828;
 }
 
 .product-card .price {
@@ -284,7 +287,13 @@ option {
     font-weight: 700;
 }
 
-/*  */
+
+
+
+
+
+/* Pagination */
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -314,7 +323,7 @@ option {
 }
 
 
-/*  */
+/* FOOTER */
 footer {
     height: 20vh;
     padding: 1.4rem;
@@ -337,63 +346,73 @@ footer span a {
 /* DESKTOP */
 
 @media(min-width:800px) {
+
+    .mobileMenu {
+        display: none;
+    }
+
     main {
         padding: 40px;
     }
 
     main form {
         display: flex;
-        flex-direction: row !important;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 2rem !important;
+        gap: 2rem;
     }
 
     .filter-input {
-        margin-top: 0px !important;
+        margin-top: 0px;
         flex: 1.5;
-        height: 43px !important;
+        height: 43px;
     }
 
     .search-input {
         width: auto;
         flex: 2;
-        height: 43px !important;
+        height: 43px;
     }
 
 
     .create-product-btn {
-        height: 40px;
+        height: 36px;
     }
 
     h1 {
+        font-size: 36px;
         margin: 30px;
     }
 
 
     .products-container {
-        grid-template-columns: repeat(3, auto) !important;
-        grid-auto-rows: auto !important;
-        gap: 30px !important;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: auto;
+        gap: 30px;
     }
 
+    /* PRODUCT */
     .product-card {
-        padding: 0.8rem !important;
+        padding: 0.8rem;
         max-width: 350px;
     }
 
     .product-card h2 {
-        font-size: 24px !important;
-        line-height: 28px !important;
-        height: calc(2 * 28px) !important;
-        -webkit-line-clamp: 2 !important;
+        font-size: 24px;
+        line-height: 28px;
+        height: calc(2 * 28px);
+        -webkit-line-clamp: 2;
         margin: 15px 0px;
+        font-weight: 400;
     }
 
     .product-card .price {
-        font-size: 36px !important;
+        font-size: 36px;
     }
 
+
+    /* PAGS */
     .pagination {
         font-size: 24px;
     }
