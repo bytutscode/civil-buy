@@ -385,6 +385,10 @@ footer span a {
         margin: 30px;
     }
 
+    h1::after {
+        width: 12rem;
+    }
+
 
     .products-container {
         grid-template-columns: repeat(3, auto);
