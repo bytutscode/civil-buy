@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./productModal.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img src="../assets/images/logo.svg" alt="Civil buy logo"></div>
+        <div class="mobileMenu" onclick="this.classList.toggle('active')">
+            <div class="mobileMenu-line"></div>
+            <div class="mobileMenu-line"></div>
+            <div class="mobileMenu-line"></div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="product-modal">
+
+            <h3 class="product-title">
+                Argamassa Colante para Porcelanato Interno E Externo Cinza 20kg
+            </h3>
+
+            <div class="product-images">
+
+                <img id="main-image" src="../assets/media/image 1.jpg" alt="Argamassa">
+                <img class="active" src="../assets/media/image 1.jpg" alt="Argamassa 2">
+
+
+            </div>
+
+            <div class="price-and-quantity">
+
+                <div class="price">
+                    <span class="price-currency">R$</span>
+                    <span class="price-value">37,99</span>
+                </div>
+                <div id="quantity">
+                    Quantidade:
+                    <div>
+                        <div class="decrease">-</div>
+                        <input type="text" name="quantity" value="1">
+                        <div class="increase">+</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="add-cart-btn">
+                Adicionar ao carrinho
+                <span class="material-icons">
+                    shopping_cart
+                </span>
+            </button>
+
+            <div id="delivery">
+                <div class="address">
+                    <span class="material-icons">
+                        local_shipping
+                    </span>
+                    Av. Pres. Vargas, 1234 - Centro, Rio de Janeiro - RJ, 20071-002
+                    <button class="change-address">
+                        <span> trocar</span>
+                        <span class="material-icons">
+                            cached
+                        </span>
+                    </button>
+                </div>
+
+                <div class="delivery-option">
+                    <span class="material-icons">
+                        store
+                    </span>
+                    <span>
+                        <span class="title">
+                            Entregador parceiro
+                        </span>
+                        <span class="waiting-time">
+                            Entrega em até 1h
+                        </span>
+                    </span>
+                    <span class="price">
+                        Grátis
+                    </span>
+                </div>
+                <div class="delivery-option">
+                    <span class="material-icons">
+                        <img src="../assets/images/ic_baseline-delivery-dining.svg" alt="">
+                    </span>
+                    <span>
+                        <span class="title">
+                            Entrega pela loja
+                        </span>
+                        <span class="waiting-time">
+                            Entrega em até 2h
+                        </span>
+                    </span>
+                    <span class="price">
+                        R$ 2,00
+                    </span>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <table class="vertical-table">
+                    <tbody>
+                        <tr>
+                            <td>Descrição</td>
+                            <td>
+                                A Argamassa Colante na cor cinza para Porcelanato da Fortaleza de 20Kg é ideal para
+                                assentamento de revestimento porcelanato em fachadas de áreas internas e externas. No
+                                caso do assentamento de fachadas, suas placas de aplicação devem ter dimensão maior do
+                                que 400 cm².
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Marca</td>
+                            <td>Fortaleza</td>
+                        </tr>
+                        <tr>
+                            <td>Peso (kg)</td>
+                            <td>20,000</td>
+                        </tr>
+                        <tr>
+                            <td>Tipo</td>
+                            <td>Argamassa</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensões Aproximadas do Produto com Embalagem (cm) - AxLxP</td>
+                            <td>9 x 35 x 45 cm</td>
+                        </tr>
+                        <tr>
+                            <td>Tempo de Secagem</td>
+                            <td>72 horas</td>
+                        </tr>
+                        <tr>
+                            <td>Cor</td>
+                            <td>Cinza</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

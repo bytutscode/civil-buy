@@ -1,0 +1,360 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&family=Quicksand:wght@300;500&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Global css to the page*/
+:root {
+    --main-color: #F5A321;
+    --secondary-color: #011C42;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: var(--secondary-color);
+    height: 10vh;
+    width: 100%;
+    border-bottom: 4px solid var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* HEADER */
+.logo {
+    margin-left: 2em;
+    width: 20%;
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+}
+
+
+
+.mobileMenu {
+    width: 30px;
+    height: 25px;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mobileMenu-line {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    transition: all ease-in-out .3s;
+}
+
+.mobileMenu .mobileMenu-line:nth-child(2) {
+    margin-top: 8px;
+}
+
+.mobileMenu .mobileMenu-line:nth-child(3) {
+    margin-top: 16px;
+}
+
+.mobileMenu.active .mobileMenu-line {
+    position: absolute;
+    margin: 5px;
+    width: 100%;
+}
+
+.mobileMenu.active .mobileMenu-line:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.mobileMenu.active .mobileMenu-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobileMenu.active .mobileMenu-line:nth-child(3) {
+    transform: rotate(45deg);
+
+}
+
+
+
+
+
+
+/*  */
+
+main {}
+
+.product-modal {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--main-color);
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-color: var(--secondary-color);
+}
+
+
+
+.product-images {
+    text-align: center;
+}
+
+.product-images img {
+    width: 80px;
+    height: 80px;
+}
+
+.product-images img.active {
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+#main-image {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+.material-icons {
+    color: var(--secondary-color);
+}
+
+.price-and-quantity .price {
+    align-self: flex-end;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--main-color);
+    display: flex;
+}
+
+
+
+.price-and-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#quantity {
+    width: 100px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+#quantity div {
+    display: flex;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    gap: 7px;
+}
+
+#quantity div * {
+    width: 46px !important;
+    height: 41px !important;
+    display: flex;
+    align-items: center;
+}
+
+.decrease,
+.increase {
+    font-family: Arial;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 5px;
+}
+
+.decrease {
+    font-size: 46px;
+    margin-top: -7px;
+}
+
+#quantity div input {
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    height: 100%;
+}
+
+.add-cart-btn {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.add-cart-btn span {
+    color: var(--main-color) !important;
+    font-size: 25px;
+}
+
+
+.address,
+.delivery-option {
+    display: flex;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-top: 1px solid rgba(99, 104, 107, 1);
+    padding: 10px;
+    gap: 10px;
+    height: 90px;
+}
+
+.change-address {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.change-address span:first-child {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 4px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.address>span:first-child,
+.delivery-option span:first-child {
+    font-size: 27.5px;
+}
+
+.delivery-option {
+    height: auto;
+}
+
+.delivery-option span:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.delivery-option span:nth-child(2) .title {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.delivery-option .price {
+    margin-left: auto;
+}
+
+/* TABLE */
+.product-info {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid #00000067;
+    border-collapse: collapse;
+    padding: 10px;
+    vertical-align: baseline;
+}
+
+table {
+    width: 800px;
+}
+
+th {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    line-height: 20.7px;
+}
+
+td {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+
+@media (min-width:800px) {
+    main {
+        padding: 28px;
+    }
+
+    .product-modal {
+        margin: auto;
+        background-color: #F5A321;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .product-modal h3 {
+        width: 100%;
+        font-family: Arial;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}
